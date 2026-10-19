@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f3e8;
+  color: #2b2621;
+  font-family: 'Noto Serif JP', serif, 'Georgia';
+  line-height: 1.85;
+}
+
+.main-header {
+  background: linear-gradient(180deg, #ebdccd 0%, #f7f3e8 100%);
+  border-bottom: 3px solid #b83b32;
+  padding: 3.5rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.site-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  color: #b83b32;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.site-tagline {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #5c5247;
+  margin-bottom: 1.8rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #3b332a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.8rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #b83b32;
+  border-bottom: 2px solid #b83b32;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.article-section {
+  background: #ffffff;
+  padding: 2.2rem;
+  border: 1px solid #dfd6c7;
+  border-left: 6px solid #b83b32;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  border-radius: 2px;
+}
+
+h2 {
+  font-size: 1.65rem;
+  color: #1f1b17;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed #cfc3b0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #8f2d25;
+  margin: 1.6rem 0 0.6rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  font-size: 1.02rem;
+}
+
+.sidebar-box {
+  background: #eee8dc;
+  padding: 2rem;
+  border: 1px solid #d4c8b6;
+  border-radius: 3px;
+}
+
+.cultural-list {
+  margin: 1.2rem 0 1.5rem 1.8rem;
+  color: #4a4136;
+}
+
+.cultural-list li {
+  margin-bottom: 0.6rem;
+  padding-left: 0.4rem;
+}
+
+.main-footer {
+  background-color: #24201c;
+  color: #d1c8be;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  margin-top: 4rem;
+  border-top: 4px solid #b83b32;
+}
+
+.copyright {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-subtext {
+  font-size: 0.85rem;
+  color: #9c9285;
+}
+
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 1.7rem;
+  }
+  .main-header {
+    padding: 2rem 1rem 1rem;
+  }
+  .article-section {
+    padding: 1.2rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  p {
+    text-align: left;
+  }
+}
