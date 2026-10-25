@@ -1,14 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kacper Macikowski (53910) - AI LAB B</title>
-
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+<main class="todo-app">
+    <h1>Lista zadań</h1>
 
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Szukaj zadań (min. 2 znaki)...">
+    </div>
+
+    <ul id="todo-list" class="task-list"></ul>
+
+    <form id="add-task-form" class="add-task-form">
+        <div class="form-row">
+            <input
+                type="text"
+                id="task-text-input"
+                placeholder="Nowe zadanie (3-255 znaków)..."
+                required
+            >
+            <input
+                type="datetime-local"
+                id="task-date-input"
+            >
+            <button type="submit" id="add-btn">Zapisz</button>
+        </div>
+        <p id="form-error" class="error-msg"></p>
+    </form>
+</main>
 </body>
 </html>
