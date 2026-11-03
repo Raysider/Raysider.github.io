@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kacper Macikowski (53910) - AI LAB C</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Puzzle Mapowe</h1>
+</header>
+
+<main class="container">
+    <section class="left-panel">
+        <div id="map"></div>
+
+        <div class="controls">
+            <button id="btn-location">Moja lokalizacja</button>
+            <button id="btn-raster">Pobierz mapę</button>
+        </div>
+
+        <div id="coords" class="info-box">
+            Współrzędne: <em>brak danych (kliknij "Moja lokalizacja")</em>
+        </div>
+
+        <div class="canvas-box">
+            <h4>Wyeksportowany raster (Canvas):</h4>
+            <canvas id="raster-canvas" width="400" height="400"></canvas>
+        </div>
+    </section>
+
+    <section class="right-panel">
+        <div class="section-box">
+            <h3>Plansza docelowa (Ułóż tutaj):</h3>
+            <div id="board" class="grid-board">
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h3>Stół (Rozsypane puzzle):</h3>
+            <div id="table" class="puzzle-table">
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet-image@0.4.0/leaflet-image.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
