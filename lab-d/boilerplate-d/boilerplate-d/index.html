@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kacper Macikowski (53910) - AI LAB D</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <div class="weather-container">
+    <header>
+        <h1>Prognoza Pogody</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Wpisz nazwę miasta...">
+            <button id="search-btn">Wyszukaj</button>
+        </div>
+    </header>
+      <main>
+          <section id="current-weather" class="card current-weather hidden"></section>
+            <section id="forecast-section" class="hidden">
+                <h2>Prognoza na najbliższe dni</h2>
+                <div id="forecast-container" class="forecast-grid"></div>
+            </section>
+      </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
